@@ -1,0 +1,53 @@
+.navigation {
+  align-items: center;
+  color: $light-blue;
+  display: flex;
+  font-size: 1.5rem;
+  height: 10rem;
+  justify-content: space-between;
+  left: 0;
+  padding: 0 20%;
+  top: 0;
+  width: 60%;
+}
+
+.navigation__logo h1 {
+  margin: 0;
+  font-size: 3.5rem;
+}
+
+.navigation__items {
+  display: flex;
+  margin-left: 1.5rem;
+  margin-right: 5rem;
+
+  div {
+    align-items: center;
+    color: $light-blue;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  li {
+    margin: 0 1rem;
+  }
+
+  a, button {
+    background: $dark-blue;
+    border: none;
+    border-radius: 10px;
+    color: $off-white;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    margin: 0;
+  }
+  
+  a:hover, a:active, .active, button:hover, button:active {
+    background: $off-white;
+    color: $dark-blue;
+  }
+}
