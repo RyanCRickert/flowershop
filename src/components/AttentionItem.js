@@ -3,8 +3,7 @@ import React from "react";
 const AttentionItem = props => {
   return (
     <div className="attention-item">
-      <div className="attention-item__img">
-      </div>
+      <img className="attention-item__img" src={props.path}/>
       <div className="attention-item__desc">
         {props.name}
       </div>

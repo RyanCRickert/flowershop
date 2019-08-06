@@ -3,24 +3,24 @@ import AttentionItem from "./AttentionItem";
 
 const items = [
   {
-    name: "Special 1",
-    path: ""
+    name: "100 Roses",
+    path: "images/100-roses.jpg"
   },
   {
-    name: "Special 2",
-    path: ""
+    name: "Fresh Fauna",
+    path: "images/fresh-fauna.jpg"
   },
   {
-    name: "Special 3",
-    path: ""
+    name: "Orchid Bouquet",
+    path: "images/orchid.jpg"
   },
   {
-    name: "Special 4",
-    path: ""
+    name: "Dozen Pink Roses",
+    path: "images/pink-roses.jpg"
   },
   {
-    name: "Special 5",
-    path: ""
+    name: "Violet Surprise",
+    path: "images/violet-surprise.jpg"
   }
 ]
 

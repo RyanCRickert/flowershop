@@ -1,14 +1,12 @@
 .navigation {
   align-items: center;
+  background-color: #fff;
   color: $light-blue;
   display: flex;
   font-size: 1.5rem;
   height: 10rem;
   justify-content: space-between;
-  left: 0;
   padding: 0 20%;
-  top: 0;
-  width: 60%;
 }
 
 .navigation__logo h1 {
