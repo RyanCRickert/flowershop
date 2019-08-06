@@ -1,16 +1,18 @@
 .navigation {
   align-items: center;
   background-color: #fff;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.2);
   color: $light-blue;
   display: flex;
   font-size: 1.5rem;
   height: 10rem;
   justify-content: space-between;
-  padding: 0 20%;
+  margin: 0 15%;
 }
 
 .navigation__logo h1 {
   margin: 0;
+  margin-left: 5rem;
   font-size: 3.5rem;
 }
 
@@ -31,21 +33,16 @@
     margin: 0 1rem;
   }
 
-  a, button {
-    background: $dark-blue;
-    border: none;
-    border-radius: 10px;
-    color: $off-white;
-    cursor: pointer;
-    font: inherit;
-    font-size: 1.25rem;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    margin: 0;
-  }
-  
-  a:hover, a:active, .active, button:hover, button:active {
-    background: $off-white;
+  :hover {
     color: $dark-blue;
+  }
+}
+
+.navigation__item {
+  cursor: pointer;
+  font-size: 2rem;
+
+  svg {
+    transform: scale(2);
   }
 }

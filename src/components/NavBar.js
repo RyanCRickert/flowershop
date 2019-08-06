@@ -16,16 +16,16 @@ export const NavBar = props => (
     <div className="navigation__logo">
       <h1>Flowershoppe</h1>
     </div>
-    <nav className="navigation__items">
-      <div>
+    <div className="navigation__items">
+      <div className="navigation__item">
         <Person />
         Login
       </div>
-      <div>
+      <div className="navigation__item">
         <ShoppingCart />
         Cart
       </div>
-    </nav>
+    </div>
   </header>
 )
 

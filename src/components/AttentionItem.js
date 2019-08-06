@@ -8,7 +8,7 @@ const AttentionItem = props => {
         {props.name}
       </div>
       <div className="attention-item__cart">
-        Add to cart
+        Add to cart >
       </div>
     </div>
   )
