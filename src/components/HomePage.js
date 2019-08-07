@@ -1,7 +1,7 @@
 import React from "react";
 import Attention from "./Attention";
 import Guarantee from "./Guarantee";
-import Specials from "./Specials";
+import Seasonal from "./Seasonal";
 
 const HomePage = () => {
 
@@ -9,7 +9,7 @@ const HomePage = () => {
     <div className="content-container main">
       <Attention />
       <Guarantee />
-      <Specials />
+      <Seasonal />
     </div>
   )
 }
