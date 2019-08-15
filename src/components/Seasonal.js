@@ -3,10 +3,12 @@ import SeasonalItem from "./SeasonalItem";
 
   const items = [
     {
-      name: "Birthday"
+      name: "Birthday",
+      icon: "images/present.png"
     },
     {
-      name: "Summer"
+      name: "Summer",
+      icon: "images/sun.png"
     }
   ]
 

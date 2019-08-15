@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
-import { ShoppingCart, Person } from "@material-ui/icons"
+import { ShoppingCart, Person } from "@material-ui/icons";
 
 import { updateToken } from "../redux/actions/token";
 import { setUserName } from "../redux/actions/user";
