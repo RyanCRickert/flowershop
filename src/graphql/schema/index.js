@@ -5,16 +5,14 @@ type Product {
   _id: ID!
   title: String!
   description: String!
+  path: String!
   price: Float!
-  date: String!
-  creator: User!
 }
 
 type User {
   _id: ID!
   email: String!
   password: String
-  createdProducts: [Product!]
 }
 
 type AuthData {
@@ -26,8 +24,8 @@ type AuthData {
 input ProductInput {
   title: String!
   description: String!
+  path: String!
   price: Float!
-  date: String!
 }
 
 input UserInput {

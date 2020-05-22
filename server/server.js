@@ -38,7 +38,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(publicPath, "index.html"));
 });
 
-mongoose.connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@booking-app-ygssb.mongodb.net/${process.env.MONGO_DB}?retryWrites=true`, { useNewUrlParser: true })
+mongoose.connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@booking-app-ygssb.mongodb.net/${process.env.MONGO_DB}?retryWrites=true`, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(
     app.listen(port)
   ).catch(err => {

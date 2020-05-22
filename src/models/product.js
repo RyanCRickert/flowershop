@@ -11,17 +11,13 @@ const productSchema = new Schema({
     type: String,
     required: true
   },
+  path: {
+    type: String,
+    required: true
+  },
   price: {
     type: Number,
     required: true
-  },
-  date: {
-    type: Date,
-    required: true
-  },
-  creator: {
-    type: Schema.Types.ObjectId,
-    ref: "User"
   }
 });
 

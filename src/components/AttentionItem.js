@@ -7,6 +7,9 @@ const AttentionItem = props => {
       <div className="attention-item__desc">
         {props.name}
       </div>
+      <div className="attention-item__price">
+        {props.price}
+      </div>
       <div className="attention-item__cart">
         Add to cart >
       </div>

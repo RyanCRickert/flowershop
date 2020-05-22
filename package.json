@@ -6,9 +6,9 @@
     "start": "node server/server.js",
     "heroku-postbuild": "yarn build",
     "build": "webpack --mode production",
-    "dev-server": "webpack-dev-server",
+    "dev-server": "webpack-dev-server --hot --inline",
     "server": "nodemon server/server.js",
-    "servers": "concurrently \"nodemon server/server.js\" \"webpack-dev-server\""
+    "servers": "concurrently \"nodemon server/server.js\" \"webpack-dev-server --hot --inline\""
   },
   "license": "MIT",
   "dependencies": {
@@ -36,7 +36,6 @@
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-hot-loader": "^4.8.8",
     "react-redux": "^7.0.3",
     "react-router-dom": "^5.0.0",
     "redux": "^4.0.1",
@@ -50,6 +49,7 @@
     "concurrently": "^4.1.0",
     "dotenv": "^8.0.0",
     "nodemon": "^1.18.11",
+    "react-hot-loader": "^4.12.11",
     "webpack-dev-server": "^3.3.1"
   }
 }

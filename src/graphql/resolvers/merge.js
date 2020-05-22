@@ -51,9 +51,7 @@ const user = async userId => {
 const transformProduct = product => {
   return {
     ...product._doc,
-    _id: product.id,
-    date: dateToString(product._doc.date),
-    creator: user.bind(this, product.creator)
+    _id: product.id
   }
 }
 

@@ -1,14 +1,13 @@
 .seasonal-container {
   background: white;
   display: flex;
+  height: 100%;
   margin: 0 auto;
   width: 100%;
 }
 
 .seasonal-item {
-  border-left: 1px solid $baby-blue;
-  border-right: 1px solid $baby-blue;
-  border-top: 1px solid $baby-blue;
+  border: 1px solid $baby-blue;
   height: 20rem;
   margin: 5% 2.5%;
   width: 50%;
@@ -24,7 +23,8 @@
 
 .seasonal-item__button {
   background-color: $baby-blue;
+  font-size: 2.5rem;
   height: 20%;
   line-height: 4rem;
-  width: 100%;
+  text-align: center;
 }

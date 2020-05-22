@@ -33,6 +33,12 @@
   width: 100%;
 }
 
+.attention-item__price {
+  text-align: center;
+  user-select: none;
+  width: 100%;
+}
+
 .attention-item__cart:hover {
   text-decoration: underline;
 }

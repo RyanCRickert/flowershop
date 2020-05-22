@@ -4,9 +4,9 @@ const { transformOrder, transformProduct } = require("./merge");
 
 module.exports = {
   orders: async (args, req) => {
-    if(!req.isAuth) {
-      throw new Error("Unauthenticated.");
-    }
+    // if(!req.isAuth) {
+    //   throw new Error("Unauthenticated.");
+    // }
     try {
       const orders = await Order.find({ user: req.userId});
       return orders.map(order => {
@@ -17,9 +17,9 @@ module.exports = {
     }
   },
   orderProduct: async (args, req) => {
-    if(!req.isAuth) {
-      throw new Error("Unauthenticated.");
-    }
+    // if(!req.isAuth) {
+    //   throw new Error("Unauthenticated.");
+    // }
     const fetchedProduct = await Product.findOne({ _id: args.productId})
     const order = new Order({
       user: req.userId,
@@ -29,9 +29,9 @@ module.exports = {
     return transformOrder(result);
   },
   cancelOrder: async (args, req) => {
-    if(!req.isAuth) {
-      throw new Error("Unauthenticated.");
-    }
+    // if(!req.isAuth) {
+    //   throw new Error("Unauthenticated.");
+    // }
     try {
       const order = await Order.findById(args.orderId).populate("product");
       const product = transformProduct(order.product);

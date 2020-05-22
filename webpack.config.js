@@ -12,6 +12,7 @@ if (process.env.NODE_ENV === "test") {
 
 module.exports = {
   entry: [
+    "react-hot-loader/patch",
     "@babel/polyfill",
     "./src/app.js"
   ],
@@ -22,11 +23,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
+        loaders: ["react-hot-loader/webpack", "babel-loader"]
+        
       },
       {
         test: /\.s?css$/,
@@ -70,13 +70,11 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       "process.env.SECRET_KEY": JSON.stringify(process.env.SECRET_KEY),
-  }),
-    new webpack.HotModuleReplacementPlugin()
+  })
   ],
   devServer: {
     contentBase: path.join(__dirname, "public"),
     historyApiFallback: true,
-    publicPath: "/dist/",
-    hot: true,
+    publicPath: "/dist/"
   },
 };
